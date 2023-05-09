@@ -19,21 +19,13 @@ getPassword = () =>{
 
 
 //===========Copy function
-
-
-
-
 getCopy = () =>{
-
     document.querySelector("#copyImage").addEventListener("click", function(){
-
+        // vybere input hesla a označí
         let copyPasword = document.querySelector("#password")
             copyPasword.select()
 
-        document.execCommand("copy")
-  
-        
+        // označené zkpíruje do paměti    
+        document.execCommand("copy") 
     })
-
-
 }
